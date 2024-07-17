@@ -11,7 +11,7 @@
     Welcome to LocalLibrary, a website developed by
     <em>Mozilla Developer Network</em>!
   </p>
-  <h2><Dynamic content</h2>
+  <h2>Dynamic content</h2>
   <p>The library has the following record counts:</p>
   <ul>
     <li><strong>Books:</strong> {{ num_books }}</li>
@@ -21,5 +21,8 @@
     <li><strong>Genres:</strong> {{ num_genres }}</li>
     <li><strong>Books with "test" in summary:</strong> {{ num_word_occurance }}</li>
   </ul>
+  <p>
+    You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.
+  </p>
 {% endblock %}
 
